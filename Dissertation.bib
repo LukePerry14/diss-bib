@@ -1,3 +1,35 @@
+@online{battagliaInteractionNetworksLearning2016,
+  title = {Interaction {{Networks}} for {{Learning}} about {{Objects}}, {{Relations}} and {{Physics}}},
+  author = {Battaglia, Peter W. and Pascanu, Razvan and Lai, Matthew and Rezende, Danilo and Kavukcuoglu, Koray},
+  date = {2016-12-01},
+  eprint = {1612.00222},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1612.00222},
+  url = {http://arxiv.org/abs/1612.00222},
+  urldate = {2026-03-23},
+  abstract = {Reasoning about objects, relations, and physics is central to human intelligence, and a key goal of artificial intelligence. Here we introduce the interaction network, a model which can reason about how objects in complex systems interact, supporting dynamical predictions, as well as inferences about the abstract properties of the system. Our model takes graphs as input, performs object- and relation-centric reasoning in a way that is analogous to a simulation, and is implemented using deep neural networks. We evaluate its ability to reason about several challenging physical domains: n-body problems, rigid-body collision, and non-rigid dynamics. Our results show it can be trained to accurately simulate the physical trajectories of dozens of objects over thousands of time steps, estimate abstract quantities such as energy, and generalize automatically to systems with different numbers and configurations of objects and relations. Our interaction network implementation is the first general-purpose, learnable physics engine, and a powerful general framework for reasoning about object and relations in a wide variety of complex real-world domains.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\7XTMG5LN\\Battaglia et al. - 2016 - Interaction Networks for Learning about Objects, Relations and Physics.pdf;C\:\\Users\\lukep\\Zotero\\storage\\DPU9AKQ4\\1612.html}
+}
+
+@online{battagliaRelationalInductiveBiases2018,
+  title = {Relational Inductive Biases, Deep Learning, and Graph Networks},
+  author = {Battaglia, Peter W. and Hamrick, Jessica B. and Bapst, Victor and Sanchez-Gonzalez, Alvaro and Zambaldi, Vinicius and Malinowski, Mateusz and Tacchetti, Andrea and Raposo, David and Santoro, Adam and Faulkner, Ryan and Gulcehre, Caglar and Song, Francis and Ballard, Andrew and Gilmer, Justin and Dahl, George and Vaswani, Ashish and Allen, Kelsey and Nash, Charles and Langston, Victoria and Dyer, Chris and Heess, Nicolas and Wierstra, Daan and Kohli, Pushmeet and Botvinick, Matt and Vinyals, Oriol and Li, Yujia and Pascanu, Razvan},
+  date = {2018-10-17},
+  eprint = {1806.01261},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1806.01261},
+  url = {http://arxiv.org/abs/1806.01261},
+  urldate = {2026-03-23},
+  abstract = {Artificial intelligence (AI) has undergone a renaissance recently, making major progress in key domains such as vision, language, control, and decision-making. This has been due, in part, to cheap data and cheap compute resources, which have fit the natural strengths of deep learning. However, many defining characteristics of human intelligence, which developed under much different pressures, remain out of reach for current approaches. In particular, generalizing beyond one's experiences--a hallmark of human intelligence from infancy--remains a formidable challenge for modern AI. The following is part position paper, part review, and part unification. We argue that combinatorial generalization must be a top priority for AI to achieve human-like abilities, and that structured representations and computations are key to realizing this objective. Just as biology uses nature and nurture cooperatively, we reject the false choice between "hand-engineering" and "end-to-end" learning, and instead advocate for an approach which benefits from their complementary strengths. We explore how using relational inductive biases within deep learning architectures can facilitate learning about entities, relations, and rules for composing them. We present a new building block for the AI toolkit with a strong relational inductive bias--the graph network--which generalizes and extends various approaches for neural networks that operate on graphs, and provides a straightforward interface for manipulating structured knowledge and producing structured behaviors. We discuss how graph networks can support relational reasoning and combinatorial generalization, laying the foundation for more sophisticated, interpretable, and flexible patterns of reasoning. As a companion to this paper, we have released an open-source software library for building graph networks, with demonstrations of how to use them in practice.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\IK4XR5CC\\Battaglia et al. - 2018 - Relational inductive biases, deep learning, and graph networks.pdf;C\:\\Users\\lukep\\Zotero\\storage\\PQ2VMI28\\1806.html}
+}
+
 @online{chenHowInterpretableAre2024,
   title = {How {{Interpretable Are Interpretable Graph Neural Networks}}?},
   author = {Chen, Yongqiang and Bian, Yatao and Han, Bo and Cheng, James},
@@ -12,6 +44,23 @@
   pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
   file = {C\:\\Users\\lukep\\Zotero\\storage\\63VQBI2Q\\Chen et al. - 2024 - How Interpretable Are Interpretable Graph Neural Networks.pdf;C\:\\Users\\lukep\\Zotero\\storage\\MZ8F78XL\\2406.html}
+}
+
+@online{chenRelGNNCompositeMessage2025,
+  title = {{{RelGNN}}: {{Composite Message Passing}} for {{Relational Deep Learning}}},
+  shorttitle = {{{RelGNN}}},
+  author = {Chen, Tianlang and Kanatsoulis, Charilaos and Leskovec, Jure},
+  date = {2025-06-06},
+  eprint = {2502.06784},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2502.06784},
+  url = {http://arxiv.org/abs/2502.06784},
+  urldate = {2026-03-22},
+  abstract = {Predictive tasks on relational databases are critical in real-world applications spanning e-commerce, healthcare, and social media. To address these tasks effectively, Relational Deep Learning (RDL) encodes relational data as graphs, enabling Graph Neural Networks (GNNs) to exploit relational structures for improved predictions. However, existing RDL methods often overlook the intrinsic structural properties of the graphs built from relational databases, leading to modeling inefficiencies, particularly in handling many-to-many relationships. Here we introduce RelGNN, a novel GNN framework specifically designed to leverage the unique structural characteristics of the graphs built from relational databases. At the core of our approach is the introduction of atomic routes, which are simple paths that enable direct single-hop interactions between the source and destination nodes. Building upon these atomic routes, RelGNN designs new composite message passing and graph attention mechanisms that reduce redundancy, highlight key signals, and enhance predictive accuracy. RelGNN is evaluated on 30 diverse real-world tasks from Relbench (Fey et al., 2024), and achieves state-of-the-art performance on the vast majority of tasks, with improvements of up to 25\%. Code is available at https://github.com/snap-stanford/RelGNN.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Databases,Computer Science - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\G2YNE6YS\\Chen et al. - 2025 - RelGNN Composite Message Passing for Relational Deep Learning.pdf;C\:\\Users\\lukep\\Zotero\\storage\\A8YDLFFZ\\2502.html}
 }
 
 @online{chenThisLooksThat2019,
@@ -44,19 +93,18 @@
 @article{dietterichSolvingMultipleInstance1997,
   title = {Solving the Multiple Instance Problem with Axis-Parallel Rectangles},
   author = {Dietterich, Thomas G. and Lathrop, Richard H. and Lozano-Pérez, Tomás},
-  date = {1997-01-01},
+  date = {1997-01},
   journaltitle = {Artificial Intelligence},
   shortjournal = {Artificial Intelligence},
   volume = {89},
-  number = {1},
+  number = {1--2},
   pages = {31--71},
-  issn = {0004-3702},
+  issn = {00043702},
   doi = {10.1016/S0004-3702(96)00034-3},
-  url = {https://www.sciencedirect.com/science/article/pii/S0004370296000343},
-  urldate = {2026-03-12},
-  abstract = {The multiple instance problem arises in tasks where the training examples are ambiguous: a single example object may have many alternative feature vectors (instances) that describe it, and yet only one of those feature vectors may be responsible for the observed classification of the object. This paper describes and compares three kinds of algorithms that learn axis-parallel rectangles to solve the multiple instance problem. Algorithms that ignore the multiple instance problem perform very poorly. An algorithm that directly confronts the multiple instance problem (by attempting to identify which feature vectors are responsible for the observed classifications) performs best, giving 89\% correct predictions on a musk odor prediction task. The paper also illustrates the use of artificial data to debug and compare these algorithms.},
-  keywords = {Drug design,Machine learning,Structure-activity relationships},
-  file = {C\:\\Users\\lukep\\Zotero\\storage\\GAGX5W94\\Dietterich et al. - 1997 - Solving the multiple instance problem with axis-parallel rectangles.pdf;C\:\\Users\\lukep\\Zotero\\storage\\WMXNSWWR\\S0004370296000343.html}
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S0004370296000343},
+  urldate = {2026-03-26},
+  langid = {english},
+  file = {C:\Users\lukep\Zotero\storage\F5YJ7CZ3\Dietterich et al. - 1997 - Solving the multiple instance problem with axis-parallel rectangles.pdf}
 }
 
 @inproceedings{donnellyDeformableProtoPNetInterpretable2022,
@@ -119,6 +167,23 @@
   file = {C:\Users\lukep\Zotero\storage\7NY5V9AN\Fey et al. - Position  Relational Deep Learning - Graph Representation  Learning on Relational Databases.pdf}
 }
 
+@article{fouldsReviewMultiinstanceLearning2010,
+  title = {A Review of Multi-Instance Learning Assumptions},
+  author = {Foulds, James and Frank, Eibe},
+  date = {2010-03},
+  journaltitle = {The Knowledge Engineering Review},
+  volume = {25},
+  number = {1},
+  pages = {1--25},
+  issn = {1469-8005, 0269-8889},
+  doi = {10.1017/S026988890999035X},
+  url = {https://www.cambridge.org/core/journals/knowledge-engineering-review/article/review-of-multiinstance-learning-assumptions/0915098C83BF119A377015A45952247A},
+  urldate = {2026-03-26},
+  abstract = {Multi-instance (MI) learning is a variant of inductive machine learning, where each learning example contains a bag of instances instead of a single feature vector. The term commonly refers to the supervised setting, where each bag is associated with a label. This type of representation is a natural fit for a number of real-world learning scenarios, including drug activity prediction and image classification, hence many MI learning algorithms have been proposed. Any MI learning method must relate instances to bag-level class labels, but many types of relationships between instances and class labels are possible. Although all early work in MI learning assumes a specific MI concept class known to be appropriate for a drug activity prediction domain; this ‘standard MI assumption’ is not guaranteed to hold in other domains. Much of the recent work in MI learning has concentrated on a relaxed view of the MI problem, where the standard MI assumption is dropped, and alternative assumptions are considered instead. However, often it is not clearly stated what particular assumption is used and how it relates to other assumptions that have been proposed. In this paper, we aim to clarify the use of alternative MI assumptions by reviewing the work done in this area.},
+  langid = {english},
+  file = {C:\Users\lukep\Zotero\storage\IVURX56R\Foulds and Frank - 2010 - A review of multi-instance learning assumptions.pdf}
+}
+
 @article{gonzalez-cavazosCasebasedExplainableGraph2026,
   title = {A Case-Based Explainable Graph Neural Network Framework for Mechanistic Drug Repositioning},
   author = {Gonzalez-Cavazos, Adriana Carolina and Tu, Roger and Sinha, Meghamala and Su, Andrew I.},
@@ -153,6 +218,37 @@
   abstract = {Drug repositioning offers promising prospects for accelerating drug discovery by identifying potential drug–disease associations (DDAs) for existing drugs and diseases. Previous methods have generated meta-pathaugmented node or graph embeddings for DDA prediction in drug–disease heterogeneous networks. However, these approaches rarely develop end-to-end frameworks for path instance-level representation learning as well as the further feature selection and aggregation. By leveraging the abundant topological information in path instances, more fine-grained and interpretable predictions can be achieved. To this end, we introduce deep multiple instance learning into drug repositioning by proposing a novel method called MilGNet. MilGNet employs a heterogeneous graph neural network (HGNN)-based encoder to learn drug and disease node embeddings. Treating each drug–disease pair as a bag, we designed a special quadruplet meta-path form and implemented a pseudo meta-path generator in MilGNet to obtain multiple meta-path instances based on network topology. Additionally, a bidirectional instance encoder enhances the representation of meta-path instances. Finally, MilGNet utilizes a multi-scale interpretable predictor to aggregate bag embeddings with an attention mechanism, providing predictions at both the bag and instance levels for accurate and explainable predictions. Comprehensive experiments on five benchmarks demonstrate that MilGNet significantly outperforms ten advanced methods. Notably, three case studies on one drug (Methotrexate) and two diseases (Renal Failure and Mismatch Repair Cancer Syndrome) highlight MilGNet’s potential for discovering new indications, therapies, and generating rational meta-path instances to investigate possible treatment mechanisms. The source code is available at https://github.com/gu-yaowen/MilGNet.},
   langid = {english},
   file = {C:\Users\lukep\Zotero\storage\QLUAP26L\Gu et al. - 2025 - Deep multiple instance learning on heterogeneous graph for drug–disease association prediction.pdf}
+}
+
+@online{guRelBenchV2LargeScale2026,
+  title = {{{RelBench}} v2: {{A Large-Scale Benchmark}} and {{Repository}} for {{Relational Data}}},
+  shorttitle = {{{RelBench}} V2},
+  author = {Gu, Justin and Ranjan, Rishabh and Kanatsoulis, Charilaos and Tang, Haiming and Jurkovic, Martin and Hudovernik, Valter and Znidar, Mark and Chaturvedi, Pranshu and Shroff, Parth and Li, Fengyu and Leskovec, Jure},
+  date = {2026},
+  doi = {10.48550/ARXIV.2602.12606},
+  url = {https://arxiv.org/abs/2602.12606},
+  urldate = {2026-03-31},
+  abstract = {Relational deep learning (RDL) has emerged as a powerful paradigm for learning directly on relational databases by modeling entities and their relationships across multiple interconnected tables. As this paradigm evolves toward larger models and relational foundation models, scalable and realistic benchmarks are essential for enabling systematic evaluation and progress. In this paper, we introduce RELBENCH v2, a major expansion of the RELBENCH benchmark for RDL. RELBENCH v2 adds four large-scale relational datasets spanning scholarly publications, enterprise resource planning, consumer platforms, and clinical records, increasing the benchmark to 11 datasets comprising over 22 million rows across 29 tables. We further introduce autocomplete tasks, a new class of predictive objectives that require models to infer missing attribute values directly within relational tables while respecting temporal constraints, expanding beyond traditional forecasting tasks constructed via SQL queries. In addition, RELBENCH v2 expands beyond its native datasets by integrating external benchmarks and evaluation frameworks: we translate event streams from the Temporal Graph Benchmark into relational schemas for unified relational–temporal evaluation, interface with ReDeLEx to provide uniform access to 70+ real-world databases suitable for pretraining, and incorporate 4DBInfer datasets and tasks to broaden multi-table evaluation coverage. Experimental results demonstrate that RDL models consistently outperform single-table baselines across autocomplete, forecasting, and recommendation tasks, highlighting the importance of modeling relational structure explicitly.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {FOS: Computer and information sciences,Machine Learning (cs.LG)},
+  file = {C:\Users\lukep\Zotero\storage\CS6X84J5\Gu et al. - 2026 - RelBench v2 A Large-Scale Benchmark and Repository for Relational Data.pdf}
+}
+
+@online{hamiltonInductiveRepresentationLearning2018,
+  title = {Inductive {{Representation Learning}} on {{Large Graphs}}},
+  author = {Hamilton, William L. and Ying, Rex and Leskovec, Jure},
+  date = {2018-09-10},
+  eprint = {1706.02216},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1706.02216},
+  url = {http://arxiv.org/abs/1706.02216},
+  urldate = {2026-03-24},
+  abstract = {Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node's local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classification benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning,Computer Science - Social and Information Networks,Statistics - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\SGFWXJ3A\\Hamilton et al. - 2018 - Inductive Representation Learning on Large Graphs.pdf;C\:\\Users\\lukep\\Zotero\\storage\\EIIWPE3T\\1706.html}
 }
 
 @online{hoffmannThisLooksThat2021,
@@ -222,6 +318,13 @@
   file = {C:\Users\lukep\Zotero\storage\R8QJRFUB\Ilse et al. - 2018 - Attention-based Deep Multiple Instance Learning.pdf}
 }
 
+@online{InvestigatingDualityInterpretability,
+  title = {Investigating the {{Duality}} of {{Interpretability}} and {{Explainability}} in {{Machine Learning}}},
+  url = {https://arxiv.org/html/2503.21356v1},
+  urldate = {2026-03-30},
+  file = {C:\Users\lukep\Zotero\storage\W9X62IY2\2503.html}
+}
+
 @online{jiangMetaPathAttentionExplanation2026,
   title = {Is {{Meta-Path Attention}} an {{Explanation}}? {{Evidence}} of {{Alignment}} and {{Decoupling}} in {{Heterogeneous GNNs}}},
   shorttitle = {Is {{Meta-Path Attention}} an {{Explanation}}?},
@@ -237,6 +340,22 @@
   pubstate = {prepublished},
   keywords = {Computer Science - Machine Learning},
   file = {C\:\\Users\\lukep\\Zotero\\storage\\9DSG4B9L\\Jiang et al. - 2026 - Is Meta-Path Attention an Explanation Evidence of Alignment and Decoupling in Heterogeneous GNNs.pdf;C\:\\Users\\lukep\\Zotero\\storage\\7J6SESSK\\2602.html}
+}
+
+@online{kakkadSurveyExplainabilityGraph2023,
+  title = {A {{Survey}} on {{Explainability}} of {{Graph Neural Networks}}},
+  author = {Kakkad, Jaykumar and Jannu, Jaspal and Sharma, Kartik and Aggarwal, Charu and Medya, Sourav},
+  date = {2023-06-02},
+  eprint = {2306.01958},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2306.01958},
+  url = {http://arxiv.org/abs/2306.01958},
+  urldate = {2026-03-30},
+  abstract = {Graph neural networks (GNNs) are powerful graph-based deep-learning models that have gained significant attention and demonstrated remarkable performance in various domains, including natural language processing, drug discovery, and recommendation systems. However, combining feature information and combinatorial graph structures has led to complex non-linear GNN models. Consequently, this has increased the challenges of understanding the workings of GNNs and the underlying reasons behind their predictions. To address this, numerous explainability methods have been proposed to shed light on the inner mechanism of the GNNs. Explainable GNNs improve their security and enhance trust in their recommendations. This survey aims to provide a comprehensive overview of the existing explainability techniques for GNNs. We create a novel taxonomy and hierarchy to categorize these methods based on their objective and methodology. We also discuss the strengths, limitations, and application scenarios of each category. Furthermore, we highlight the key evaluation metrics and datasets commonly used to assess the explainability of GNNs. This survey aims to assist researchers and practitioners in understanding the existing landscape of explainability methods, identifying gaps, and fostering further advancements in interpretable graph-based machine learning.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\83Y36HKU\\Kakkad et al. - 2023 - A Survey on Explainability of Graph Neural Networks.pdf;C\:\\Users\\lukep\\Zotero\\storage\\5I5JAF2A\\2306.html}
 }
 
 @article{kolodnerIntroductionCasebasedReasoning1992,
@@ -370,6 +489,23 @@
   url = {https://proceedings.neurips.cc/paper_files/paper/1997/hash/82965d4ed8150294d4330ace00821d77-Abstract.html},
   urldate = {2026-03-12},
   file = {C:\Users\lukep\Zotero\storage\4BSZMCYM\Maron and Lozano-Pérez - 1997 - A Framework for Multiple-Instance Learning.pdf}
+}
+
+@online{martinsSoftmaxSparsemaxSparse2016,
+  title = {From {{Softmax}} to {{Sparsemax}}: {{A Sparse Model}} of {{Attention}} and {{Multi-Label Classification}}},
+  shorttitle = {From {{Softmax}} to {{Sparsemax}}},
+  author = {Martins, André F. T. and Astudillo, Ramón Fernandez},
+  date = {2016-02-08},
+  eprint = {1602.02068},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1602.02068},
+  url = {http://arxiv.org/abs/1602.02068},
+  urldate = {2026-03-25},
+  abstract = {We propose sparsemax, a new activation function similar to the traditional softmax, but able to output sparse probabilities. After deriving its properties, we show how its Jacobian can be efficiently computed, enabling its use in a network trained with backpropagation. Then, we propose a new smooth and convex loss function which is the sparsemax analogue of the logistic loss. We reveal an unexpected connection between this new loss and the Huber classification loss. We obtain promising empirical results in multi-label classification problems and in attention-based neural networks for natural language inference. For the latter, we achieve a similar performance as the traditional softmax, but with a selective, more compact, attention focus.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\BWASLRXS\\Martins and Astudillo - 2016 - From Softmax to Sparsemax A Sparse Model of Attention and Multi-Label Classification.pdf;C\:\\Users\\lukep\\Zotero\\storage\\RKRYFQLN\\1602.html}
 }
 
 @online{matsuishiMultiinstanceLearningDownstream2025,
@@ -508,6 +644,22 @@
   file = {C:\Users\lukep\Zotero\storage\P8XA2RFF\Rymarczyk et al. - 2022 - Interpretable Image Classification with Differentiable Prototypes Assignment.pdf}
 }
 
+@online{santoroSimpleNeuralNetwork2017,
+  title = {A Simple Neural Network Module for Relational Reasoning},
+  author = {Santoro, Adam and Raposo, David and Barrett, David G. T. and Malinowski, Mateusz and Pascanu, Razvan and Battaglia, Peter and Lillicrap, Timothy},
+  date = {2017-06-05},
+  eprint = {1706.01427},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1706.01427},
+  url = {http://arxiv.org/abs/1706.01427},
+  urldate = {2026-03-23},
+  abstract = {Relational reasoning is a central component of generally intelligent behavior, but has proven difficult for neural networks to learn. In this paper we describe how to use Relation Networks (RNs) as a simple plug-and-play module to solve problems that fundamentally hinge on relational reasoning. We tested RN-augmented networks on three tasks: visual question answering using a challenging dataset called CLEVR, on which we achieve state-of-the-art, super-human performance; text-based question answering using the bAbI suite of tasks; and complex reasoning about dynamic physical systems. Then, using a curated dataset called Sort-of-CLEVR we show that powerful convolutional networks do not have a general capacity to solve relational questions, but can gain this capacity when augmented with RNs. Our work shows how a deep learning architecture equipped with an RN module can implicitly discover and learn to reason about entities and their relations.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\FZ2RKMYS\\Santoro et al. - 2017 - A simple neural network module for relational reasoning.pdf;C\:\\Users\\lukep\\Zotero\\storage\\H6LA77D5\\1706.html}
+}
+
 @article{schmidtCasedBasedReasoningMedical2001,
   title = {Cased-{{Based Reasoning}} for Medical Knowledge-Based Systems},
   author = {Schmidt, Rainer and Montani, Stefania and Bellazzi, Riccardo and Portinale, Luigi and Gierl, Lothar},
@@ -553,6 +705,42 @@
   url = {https://arxiv.org/html/2502.09340v1#S4},
   urldate = {2026-02-24},
   file = {C:\Users\lukep\Zotero\storage\EBCWXTNF\2502.html}
+}
+
+@article{vishwarupeExplainableAIInterpretable2022,
+  title = {Explainable {{AI}} and {{Interpretable Machine Learning}}: {{A Case Study}} in {{Perspective}}},
+  shorttitle = {Explainable {{AI}} and {{Interpretable Machine Learning}}},
+  author = {Vishwarupe, Varad and Joshi, Prachi M. and Mathias, Nicole and Maheshwari, Shrey and Mhaisalkar, Shweta and Pawar, Vishal},
+  date = {2022},
+  journaltitle = {Procedia Computer Science},
+  shortjournal = {Procedia Computer Science},
+  volume = {204},
+  pages = {869--876},
+  issn = {18770509},
+  doi = {10.1016/j.procs.2022.08.105},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S1877050922008432},
+  urldate = {2026-03-30},
+  abstract = {Explainable AI, as the word implies is a type of artificial intelligence which enables the explanation of learning models and focuses on why the system arrived at a particular decision, exploring its logical paradigms, contrary to the inherent black box nature of artificial intelligence. Similarly, machine learning interpretability allows users to comprehend the results of the learning models by providing reasoning for the decisions that it has arrived at. This nature of Explainable AI(XAI) and Interpretable Machine Learning (IML) is particularly helpful in the context of AI applications pertaining to healthcare and medical diagnosis. In this paper, we present a case study wherein we have focused on using the ELI5 XAI toolkit in conjunction with LIME (Local Interpretable Modelagnostic Explanations) and SHAP (SHapley Additive exPlanations) algorithmic frameworks in Python, for determining if a patient is diabetic or not, based on a randomized clinical trial dataset. We also endeavor to point out trends and most vital factors that can help clinicians and researchers in analyzing patient data, in conjunction with machine learning and artificial intelligence outputs. Having explanations for machine learning models allows for higher degree of interpretability and paves the way for accountability and transparency in medical and other fields of data analysis. We explore the aforementioned paradigms in the context of this research paper, paving the way for developing an accountable, transparent and robust data analytics framework using XAI \& IML.},
+  langid = {english},
+  file = {C:\Users\lukep\Zotero\storage\SL9IUXEU\Vishwarupe et al. - 2022 - Explainable AI and Interpretable Machine Learning A Case Study in Perspective.pdf}
+}
+
+@article{vishwarupeExplainableAIInterpretable2022a,
+  title = {Explainable {{AI}} and {{Interpretable Machine Learning}}: {{A Case Study}} in {{Perspective}}},
+  shorttitle = {Explainable {{AI}} and {{Interpretable Machine Learning}}},
+  author = {Vishwarupe, Varad and Joshi, Prachi M. and Mathias, Nicole and Maheshwari, Shrey and Mhaisalkar, Shweta and Pawar, Vishal},
+  date = {2022},
+  journaltitle = {Procedia Computer Science},
+  shortjournal = {Procedia Computer Science},
+  volume = {204},
+  pages = {869--876},
+  issn = {18770509},
+  doi = {10.1016/j.procs.2022.08.105},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S1877050922008432},
+  urldate = {2026-03-23},
+  abstract = {Explainable AI, as the word implies is a type of artificial intelligence which enables the explanation of learning models and focuses on why the system arrived at a particular decision, exploring its logical paradigms, contrary to the inherent black box nature of artificial intelligence. Similarly, machine learning interpretability allows users to comprehend the results of the learning models by providing reasoning for the decisions that it has arrived at. This nature of Explainable AI(XAI) and Interpretable Machine Learning (IML) is particularly helpful in the context of AI applications pertaining to healthcare and medical diagnosis. In this paper, we present a case study wherein we have focused on using the ELI5 XAI toolkit in conjunction with LIME (Local Interpretable Modelagnostic Explanations) and SHAP (SHapley Additive exPlanations) algorithmic frameworks in Python, for determining if a patient is diabetic or not, based on a randomized clinical trial dataset. We also endeavor to point out trends and most vital factors that can help clinicians and researchers in analyzing patient data, in conjunction with machine learning and artificial intelligence outputs. Having explanations for machine learning models allows for higher degree of interpretability and paves the way for accountability and transparency in medical and other fields of data analysis. We explore the aforementioned paradigms in the context of this research paper, paving the way for developing an accountable, transparent and robust data analytics framework using XAI \& IML.},
+  langid = {english},
+  file = {C:\Users\lukep\Zotero\storage\DQWJDCEP\Vishwarupe et al. - 2022 - Explainable AI and Interpretable Machine Learning A Case Study in Perspective.pdf}
 }
 
 @inproceedings{wangInterpretableImageRecognition2021,
