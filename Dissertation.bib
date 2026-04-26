@@ -1,3 +1,19 @@
+@online{alonBottleneckGraphNeural2021,
+  title = {On the {{Bottleneck}} of {{Graph Neural Networks}} and Its {{Practical Implications}}},
+  author = {Alon, Uri and Yahav, Eran},
+  date = {2021-03-09},
+  eprint = {2006.05205},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2006.05205},
+  url = {http://arxiv.org/abs/2006.05205},
+  urldate = {2026-04-26},
+  abstract = {Since the proposal of the graph neural network (GNN) by Gori et al. (2005) and Scarselli et al. (2008), one of the major problems in training GNNs was their struggle to propagate information between distant nodes in the graph. We propose a new explanation for this problem: GNNs are susceptible to a bottleneck when aggregating messages across a long path. This bottleneck causes the over-squashing of exponentially growing information into fixed-size vectors. As a result, GNNs fail to propagate messages originating from distant nodes and perform poorly when the prediction task depends on long-range interaction. In this paper, we highlight the inherent problem of over-squashing in GNNs: we demonstrate that the bottleneck hinders popular GNNs from fitting long-range signals in the training data; we further show that GNNs that absorb incoming edges equally, such as GCN and GIN, are more susceptible to over-squashing than GAT and GGNN; finally, we show that prior work, which extensively tuned GNN models of long-range problems, suffers from over-squashing, and that breaking the bottleneck improves their state-of-the-art results without any tuning or additional weights. Our code is available at https://github.com/tech-srl/bottleneck/ .},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\YP4V4M2Y\\Alon and Yahav - 2021 - On the Bottleneck of Graph Neural Networks and its Practical Implications.pdf;C\:\\Users\\lukep\\Zotero\\storage\\2FC3CTRD\\2006.html}
+}
+
 @article{altmeyerExplainingBlackBoxModels2023,
   title = {Explaining {{Black-Box Models}} through {{Counterfactuals}}},
   author = {Altmeyer, Patrick and family=Deursen, given=Arie, prefix=van, useprefix=false and family=Liem, given=Cynthia C., prefix=s, useprefix=false},
@@ -53,6 +69,22 @@
   pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Statistics - Machine Learning},
   file = {C\:\\Users\\lukep\\Zotero\\storage\\IK4XR5CC\\Battaglia et al. - 2018 - Relational inductive biases, deep learning, and graph networks.pdf;C\:\\Users\\lukep\\Zotero\\storage\\PQ2VMI28\\1806.html}
+}
+
+@online{bischoffFeatureLearningMetaPaths2018,
+  title = {Feature {{Learning}} for {{Meta-Paths}} in {{Knowledge Graphs}}},
+  author = {Bischoff, Sebastian},
+  date = {2018-09-07},
+  eprint = {1809.03267},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1809.03267},
+  url = {http://arxiv.org/abs/1809.03267},
+  urldate = {2026-04-22},
+  abstract = {In this thesis, we study the problem of feature learning on heterogeneous knowledge graphs. These features can be used to perform tasks such as link prediction, classification and clustering on graphs. Knowledge graphs provide rich semantics encoded in the edge and node types. Meta-paths consist of these types and abstract paths in the graph. Until now, meta-paths can only be used as categorical features with high redundancy and are therefore unsuitable for machine learning models. We propose meta-path embeddings to solve this problem by learning semantical and compact vector representations of them. Current graph embedding methods only embed nodes and edge types and therefore miss semantics encoded in the combination of them. Our method embeds meta-paths using the skipgram model with an extension to deal with the redundancy and high amount of meta-paths in big knowledge graphs. We critically evaluate our embedding approach by predicting links on Wikidata. The experiments indicate that we learn a sensible embedding of the meta-paths but can improve it further.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning,Computer Science - Social and Information Networks,Statistics - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\YTCMI5JE\\Bischoff - 2018 - Feature Learning for Meta-Paths in Knowledge Graphs.pdf;C\:\\Users\\lukep\\Zotero\\storage\\VYYZI92D\\1809.html}
 }
 
 @online{chenHowInterpretableAre2024,
@@ -644,6 +676,22 @@
   abstract = {Case-based reasoning (CBR) systems reason from experience: they solve new problems by retrieving relevant prior cases and adapting them to fit new situations. In 1988 the first case-based reasoning workshop, sponsored by DARPA, identified theoretical foundations and fundamental issues for case-based reasoning research. Since then, much investigation has examined the CBR process itself, the validity of CBR as a cognitive model, and the application of CBR technology. The results of that work include refinements in theories of the case-based reasoning process, psychological evidence for human case-based reasoning, and the fielding of over 100 CBR applications.},
   langid = {english},
   file = {C:\Users\lukep\Zotero\storage\SRI6J3BV\Leake - 1994 - Case-based reasoning.pdf}
+}
+
+@online{liDeeperInsightsGraph2018,
+  title = {Deeper {{Insights}} into {{Graph Convolutional Networks}} for {{Semi-Supervised Learning}}},
+  author = {Li, Qimai and Han, Zhichao and Wu, Xiao-Ming},
+  date = {2018-01-22},
+  eprint = {1801.07606},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.1801.07606},
+  url = {http://arxiv.org/abs/1801.07606},
+  urldate = {2026-04-26},
+  abstract = {Many interesting problems in machine learning are being revisited with new deep learning tools. For graph-based semisupervised learning, a recent important development is graph convolutional networks (GCNs), which nicely integrate local vertex features and graph topology in the convolutional layers. Although the GCN model compares favorably with other state-of-the-art methods, its mechanisms are not clear and it still requires a considerable amount of labeled data for validation and model selection. In this paper, we develop deeper insights into the GCN model and address its fundamental limits. First, we show that the graph convolution of the GCN model is actually a special form of Laplacian smoothing, which is the key reason why GCNs work, but it also brings potential concerns of over-smoothing with many convolutional layers. Second, to overcome the limits of the GCN model with shallow architectures, we propose both co-training and self-training approaches to train GCNs. Our approaches significantly improve GCNs in learning with very few labels, and exempt them from requiring additional labels for validation. Extensive experiments on benchmarks have verified our theory and proposals.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  file = {C\:\\Users\\lukep\\Zotero\\storage\\NSM24S69\\Li et al. - 2018 - Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning.pdf;C\:\\Users\\lukep\\Zotero\\storage\\AED7VZMG\\1801.html}
 }
 
 @inproceedings{liDualstreamMultipleInstance2021,
